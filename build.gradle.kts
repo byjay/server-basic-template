@@ -40,3 +40,15 @@ tasks.withType<KotlinCompile> {
 		jvmTarget = "1.8"
 	}
 }
+
+
+
+tasks.jacocoTestReport {
+	reports {
+		xml.isEnabled = true
+//		html.destination = file("${buildDir}/jacocoHtml")
+	}
+}
+
+
+

@@ -18,6 +18,4 @@ jobs:
       - name: check
         run: ./gradlew check
       - name: coco
-        run: ./gradlew jacocoTestReport && bash <(curl -s https://codecov.io/bash)
-        env:
-          CODECOV_TOKEN: 030f900c-ad2b-49c9-97a3-34cedfd419da
+        run: ./gradlew jacocoTestReport && CODECOV_TOKEN=030f900c-ad2b-49c9-97a3-34cedfd419da bash <(curl -s https://codecov.io/bash)
